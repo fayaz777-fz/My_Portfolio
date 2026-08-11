@@ -36,6 +36,11 @@ const projects = [
     thumbnail: "/assets/website.png",
     github: "https://github.com/fayaz777-fz/Ai-webpage-designer",
   },
+  {
+    tech: "PERSONAL PORTFOLIO WEBSITE",
+    thumbnail: "/assets/portfolio_preview.png",
+    github: "https://github.com/fayaz777-fz/My_Portfolio",
+  },
 ];
 
 const certificates = [
