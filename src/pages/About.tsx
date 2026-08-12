@@ -62,40 +62,39 @@ export default function About() {
     <style>
         @page {
             size: A4;
-            margin: 15mm 15mm 15mm 15mm;
+            margin: 15mm;
         }
         body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            color: #111;
-            line-height: 1.4;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+            line-height: 1.45;
             margin: 0;
-            padding: 20px;
+            padding: 24px;
             background: #fff;
         }
         .header {
             text-align: center;
-            border-bottom: 2px solid #222;
-            padding-bottom: 10px;
             margin-bottom: 16px;
         }
         .name {
             font-size: 26px;
             font-weight: bold;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 6px;
         }
         .contact {
             font-size: 11px;
-            color: #333;
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 8px;
+            color: #333;
         }
         .contact a {
-            color: #0044cc;
+            color: #0b57d0;
             text-decoration: none;
         }
         .section-title {
@@ -103,21 +102,23 @@ export default function About() {
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border-bottom: 1px solid #777;
-            margin-top: 14px;
+            border-bottom: 1px solid #333;
+            margin-top: 16px;
             margin-bottom: 8px;
             padding-bottom: 2px;
             font-family: Arial, sans-serif;
         }
-        p, ul {
+        p {
             margin: 4px 0;
             font-size: 12px;
         }
         ul {
+            margin: 4px 0 8px 0;
             padding-left: 18px;
+            font-size: 12px;
         }
         li {
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
         .bold {
             font-weight: bold;
@@ -126,6 +127,18 @@ export default function About() {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
+            font-size: 12px;
+            margin-bottom: 3px;
+        }
+        .cert-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-bottom: 4px;
+        }
+        .cert-row a {
+            color: #0b57d0;
+            text-decoration: none;
         }
         @media print {
             body { padding: 0; }
@@ -136,46 +149,47 @@ export default function About() {
     <div class="header">
         <div class="name">SHAIK MOHAMMED FAYAZ</div>
         <div class="contact">
-            <span>Narasaraopet, Andhra Pradesh</span> |
-            <span><a href="mailto:mfshaik03@gmail.com">mfshaik03@gmail.com</a></span> |
-            <span>+91 9182622928</span> |
-            <span><a href="https://github.com/fayaz777-fz">GitHub</a></span>
+            <a href="https://github.com/fayaz777-fz" target="_blank">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/shaik-mohammed-fayaz-4448672b3/" target="_blank">LinkedIn</a> | 
+            <a href="https://leetcode.com/u/shaik_mohammed_fayaz/" target="_blank">LeetCode</a> | 
+            <a href="mailto:mfshaik03@gmail.com">mfshaik03@gmail.com</a> | 
+            <span>+91 9182622928</span>
         </div>
     </div>
 
-    <div class="section-title">Career Objective</div>
-    <p>Driven Computer Science Engineering student with strong proficiency in Data Structures, Algorithms, and Object-Oriented Programming. Possessing knowledge of Java and MySQL, and motivated to excel in fast-paced technology environments.</p>
+    <div class="section-title">CAREER OBJECTIVE</div>
+    <p>Driven Computer Science Engineering student with strong proficiency in Data Structures Algorithms and Object-Oriented Programming. Possessing knowledge of Java and MySQL, and motivated to excel in fast-paced technology environments.</p>
 
-    <div class="section-title">Technical Skills</div>
+    <div class="section-title">TECHNICAL SKILLS</div>
     <ul>
         <li><span class="bold">Programming Languages:</span> Java</li>
         <li><span class="bold">Backend:</span> Node.js, Spring Boot</li>
-        <li><span class="bold">Frontend:</span> ReactJS, HTML, CSS, TypeScript</li>
+        <li><span class="bold">Frontend:</span> ReactJS, HTML, CSS</li>
         <li><span class="bold">Databases:</span> MySQL, MongoDB</li>
         <li><span class="bold">Concepts:</span> Data Structures & Algorithms, OOP, REST APIs</li>
-        <li><span class="bold">Tools:</span> Git, VS Code</li>
+        <li><span class="bold">Tools:</span> Git, VS Code, Java Eclipse, Intellij</li>
     </ul>
 
-    <div class="section-title">Projects</div>
-    <p class="bold">FZPAY (App) – Flutter-Based Android Payment Application</p>
+    <div class="section-title">PROJECTS</div>
+    <p class="bold">VAHAAN BAZAAR (Website) – Full-Stack Web Application</p>
     <ul>
-        <li>Designed and developed FZPAY using Flutter (Dart), delivering a responsive and user-centric interface following modern mobile design standards.</li>
-        <li>Released as a signed APK and tested on Android devices.</li>
+        <li>Developed using React.js, Node.js, and MongoDB.</li>
+        <li>Implemented backend APIs and database operations, Deployed on Vercel for reliable accessibility.</li>
     </ul>
 
     <p class="bold">KONDAVEEDU (App) – Historical Tourism Mobile Application</p>
     <ul>
-        <li>Developed a tourism app promoting Kondaveedu Fort, implemented using Flutter with structured and user-friendly interface.</li>
-        <li>Published on Google Play Store under college domain, Represented with Palnadu's District Collector.</li>
+        <li>Developed a tourism app promoting Kondaveedu Fort, Implemented using Flutter with structured and user-friendly interface.</li>
+        <li>Published on Google Play Store under college domain, Represented with Palnadu's District Collector</li>
     </ul>
 
-    <p class="bold">VAHAAN BAZAAR (Website) – Full-Stack Web Application</p>
+    <p class="bold">PORTFOLIO (Website) – Personal Portfolio Site</p>
     <ul>
-        <li>Developed using React.js, Node.js, and MongoDB.</li>
-        <li>Implemented backend APIs and database operations, deployed on Vercel for reliable accessibility.</li>
+        <li>Designed and developed a responsive personal portfolio website showcasing skills, projects, education, certifications, and technical experience.</li>
+        <li>Implemented a responsive user interface with smooth animations for an engaging user experience.</li>
     </ul>
 
-    <div class="section-title">Education</div>
+    <div class="section-title">EDUCATION</div>
     <div class="flex-between">
         <span><span class="bold">2026</span> BTech (CSE) - Narasaraopeta Engineering College</span>
         <span class="bold">(CGPA: 8.2)</span>
@@ -189,25 +203,21 @@ export default function About() {
         <span class="bold">(9.7)</span>
     </div>
 
-    <div class="section-title">Internship</div>
-    <p><span class="bold">DataValley Remote Java Full Stack Intern (May 2026 – Jul 2026)</span> – Successfully completed an Online Java Full Stack Development program in collaboration with APSCHE.</p>
+    <div class="section-title">INTERNSHIP</div>
+    <p><span class="bold">DataValley Remote Java Full Stack Intern (May 2026 – Jul 2026)</span> – Successfully completed an Online Java Full Stack Development in collaboration with APSCHE</p>
     <ul>
-        <li>Gained hands-on experience in Core Java, JSP, Spring Boot, HTML, CSS, and MySQL.</li>
+        <li>Gained hands-on experience in Core Java, JSP, Spring Boot, HTML, CSS and MySQL.</li>
     </ul>
 
-    <div class="section-title">Personal Details</div>
-    <ul>
-        <li><span class="bold">Date of Birth:</span> 25 July 2005</li>
-        <li><span class="bold">Nationality:</span> Indian</li>
-        <li><span class="bold">Languages Known:</span> Telugu, English, Hindi</li>
-        <li><span class="bold">Location:</span> Narasaraopet, Andhra Pradesh</li>
-    </ul>
-
-    <div class="section-title">Hobbies</div>
-    <ul>
-        <li>Fitness workout</li>
-        <li>Photography</li>
-    </ul>
+    <div class="section-title">CERTIFICATIONS</div>
+    <div class="cert-row">
+        <span>Introduction to Internet of Things <span class="bold">(NPTEL)</span></span>
+        <a href="https://github.com/fayaz777-fz/My_Portfolio" target="_blank">View Certificate</a>
+    </div>
+    <div class="cert-row">
+        <span>Generative AI by Google Cloud</span>
+        <a href="https://github.com/fayaz777-fz/My_Portfolio" target="_blank">View Certificate</a>
+    </div>
 
     <script>
         window.onload = function() {

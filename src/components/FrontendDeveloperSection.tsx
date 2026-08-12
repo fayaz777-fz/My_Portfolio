@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
+import { FileText } from "lucide-react";
+import ResumeModal from "./ResumeModal";
 
 const BandCard = lazy(() => import("./BandCard"));
 
@@ -9,6 +11,7 @@ export default function FrontendDeveloperSection() {
   const inView = useInView(ref, { amount: 0.4 });
 
   const [showCard, setShowCard] = useState(false);
+  const [showResume, setShowResume] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [goAbout, setGoAbout] = useState(false);
 
@@ -182,9 +185,21 @@ export default function FrontendDeveloperSection() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1.1, delay: 1.4 }}
             onClick={() => setGoAbout(true)}
-            className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 text-xs uppercase font-bold hover:bg-white hover:text-black rounded-full transition"
+            className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 text-xs uppercase font-bold hover:bg-white hover:text-black rounded-full transition cursor-pointer"
           >
             About Me
+          </motion.button>
+
+          {/* Resume Button */}
+          <motion.button
+            initial={{ opacity: 0, x: 80 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 1.1, delay: 1.5 }}
+            onClick={() => setShowResume(true)}
+            className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 text-xs uppercase font-bold hover:bg-white hover:text-black rounded-full transition cursor-pointer"
+          >
+            <FileText className="w-4 h-4" />
+            Resume
           </motion.button>
         </div>
       </div>
@@ -203,6 +218,13 @@ export default function FrontendDeveloperSection() {
               <BandCard />
             </Suspense>
           </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* RESUME MODAL */}
+      <AnimatePresence>
+        {showResume && (
+          <ResumeModal isOpen={showResume} onClose={() => setShowResume(false)} />
         )}
       </AnimatePresence>
     </motion.section>

@@ -148,7 +148,9 @@ export default function ContactSection() {
 
                             {/* gmail */}
                             <a
-                                href="mailto:shaikfayazz777@gmail.com"
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=mfshaik03@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group relative flex flex-col items-center gap-2"
                             >
                                 <div className="relative w-12 h-12 sm:w-14 sm:h-14 rounded-2xl
@@ -303,7 +305,7 @@ export default function ContactSection() {
                                     </div>
 
                                     <p className="text-sm text-white/35 leading-relaxed">
-                                        Your message opens directly in WhatsApp—no spam, just real connection.
+                                        Your message opens directly in WhatsApp.
                                     </p>
                                 </div>
 
